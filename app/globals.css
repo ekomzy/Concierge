@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --cream-50: #fefdf9;
+  --cream-100: #fdf9f0;
+  --gold-500: #c9a227;
+  --luxury-dark: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #2d2d2d;
+  background-color: #fefdf9;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .luxury-gradient {
+    background: linear-gradient(135deg, #fefdf9 0%, #fdf9f0 100%);
+  }
+  
+  .gold-accent {
+    color: #c9a227;
+  }
+}
+
